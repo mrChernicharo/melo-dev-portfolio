@@ -3,7 +3,7 @@ import express from 'express';
 const router = express.Router();
 
 router.get('/hello', async (_req, res) => {
-  res.status(200).json({ message: 'Hello Melo Dev!' });
+  res.status(200).json({ message: 'Hello from the server!' });
 });
 
 export default router;

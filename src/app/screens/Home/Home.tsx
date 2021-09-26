@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import classes from './Welcome.module.css';
+import { Styles } from './Styles';
 
-function Welcome(): JSX.Element {
+export default function Home(): JSX.Element {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
@@ -10,7 +10,10 @@ function Welcome(): JSX.Element {
       .then((data) => setMessage(data.message));
   }, []);
 
-  return <p className={classes.message}>{message}</p>;
+  return (
+    <Styles>
+      <h2>Home</h2>
+      <p>{message}</p>
+    </Styles>
+  );
 }
-
-export default Welcome;
