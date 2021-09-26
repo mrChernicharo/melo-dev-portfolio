@@ -1,11 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './globals.css';
-import AppRouter from './AppRouter';
+import { PageStyles } from './PageStyles';
+
+import './globalStyles.css';
+import Router from './Router';
 
 ReactDOM.render(
   <React.StrictMode>
-    <AppRouter />
+    <PageStyles>
+      <Router />
+    </PageStyles>
   </React.StrictMode>,
   document.querySelector('#root')
 );
