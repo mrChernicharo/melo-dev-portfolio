@@ -17,4 +17,12 @@ export const PageStyles = styled.main`
     color: #fff;
     background: #282c34;
   }
+
+  a {
+    transition: 0.3s;
+
+    &:hover {
+      text-shadow: 0 0 10px #fff;
+    }
+  }
 `;
