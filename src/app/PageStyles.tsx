@@ -12,4 +12,9 @@ export const PageStyles = styled.main`
   justify-content: center;
   font-size: 1rem;
   color: white;
+
+  button {
+    color: #fff;
+    background: #282c34;
+  }
 `;
