@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaCode, FaSun, FaMoon } from 'react-icons/fa';
 import Switch from 'react-switch';
+import { useThemeContext } from '../../hooks/ThemeContext';
 
 import Nav from '../Nav/Nav';
 import { Styles } from './Styles';
@@ -8,13 +9,20 @@ import { Styles } from './Styles';
 export default function Header(): JSX.Element {
   const [checked, setChecked] = useState(false);
 
+  const { theme, toggleTheme } = useThemeContext();
+
   // function handleThemeToggle(isChecked: boolean, event: any, id: string) {
   function handleThemeToggle() {
     setChecked(!checked);
+    toggleTheme();
   }
 
+  useEffect(() => {
+    console.log(theme);
+  }, [theme]);
+
   return (
-    <Styles>
+    <Styles theme={theme}>
       <div>
         <FaCode size={36} />
       </div>

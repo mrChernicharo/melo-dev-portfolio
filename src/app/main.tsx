@@ -2,14 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { PageStyles } from './PageStyles';
 
-import './globalStyles.css';
+import './styles/globalStyles.css';
 import Router from './Router';
+import { ThemeContextProvider } from './hooks/ThemeContext';
 
 ReactDOM.render(
   <React.StrictMode>
-    <PageStyles>
+    <ThemeContextProvider>
       <Router />
-    </PageStyles>
+    </ThemeContextProvider>
   </React.StrictMode>,
   document.querySelector('#root')
 );

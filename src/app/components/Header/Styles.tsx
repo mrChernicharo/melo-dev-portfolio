@@ -1,7 +1,9 @@
 import styled from 'styled-components';
+import { IAppTheme } from '../../hooks/ThemeContext';
+import { AppColors } from '../../styles/appColors';
 
-export const Styles = styled.header`
-  border: 1px solid #fff;
+export const Styles = styled.header<{ theme: IAppTheme }>`
+  background: ${({ theme }) => AppColors(theme).bgg};
   width: 100%;
 
   position: fixed;
@@ -11,9 +13,7 @@ export const Styles = styled.header`
   grid-template-columns: 54px 170px 1fr;
   align-items: center;
 
-  div {
-    /* border: 1px solid #fff; */
-  }
+  color: #fff;
 
   .react-switch-bg > div {
     border: none;

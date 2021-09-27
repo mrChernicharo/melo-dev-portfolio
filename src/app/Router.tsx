@@ -1,21 +1,26 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
+import { useThemeContext } from './hooks/ThemeContext';
+import { PageStyles } from './PageStyles';
 import About from './screens/About/About';
 import Contact from './screens/Contact/Contact';
 import Home from './screens/Home/Home';
 import Projects from './screens/Projects/Projects';
 
 export default function Router(): JSX.Element {
+  const { theme } = useThemeContext();
   return (
     <BrowserRouter>
-      <Header />
-      <Switch>
-        <Route path="/projects" children={<Projects />} />
-        <Route path="/contact" children={<Contact />} />
-        <Route path="/about" children={<About />} />
-        <Route path="/" children={<Home />} />
-      </Switch>
+      <PageStyles theme={theme}>
+        <Header />
+        <Switch>
+          <Route path="/projects" children={<Projects />} />
+          <Route path="/contact" children={<Contact />} />
+          <Route path="/about" children={<About />} />
+          <Route path="/" children={<Home />} />
+        </Switch>
+      </PageStyles>
     </BrowserRouter>
   );
 }

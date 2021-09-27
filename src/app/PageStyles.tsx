@@ -1,21 +1,28 @@
 import styled from 'styled-components';
+import { IAppTheme } from './hooks/ThemeContext';
+import { AppColors } from './styles/appColors';
 
-export const PageStyles = styled.main`
-  text-align: center;
-  border: 1px solid #fff;
-  box-sizing: border-box;
-  background-color: #282c34;
+export const PageStyles = styled.main<{ theme: IAppTheme }>`
   min-height: 100vh;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  box-sizing: border-box;
+  padding-top: 40px;
+
+  /* border: 1px solid #fff; */
+  color: ${({ theme }) => AppColors(theme).text};
+  background-color: ${({ theme }) => AppColors(theme).bg};
+
+  text-align: center;
   font-size: 1rem;
-  color: white;
 
   button {
     color: #fff;
-    background: #282c34;
+    background: transparent;
   }
 
   a {

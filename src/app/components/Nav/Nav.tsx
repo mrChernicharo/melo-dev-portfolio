@@ -6,6 +6,7 @@ import { useLocation } from 'react-router-dom';
 import { useWindowSize } from '../../hooks/useWindowSize';
 
 import { NavStyles, NavLinksStyles, DropdownButtonStyles } from './Styles';
+import { useThemeContext } from '../../hooks/ThemeContext';
 
 export interface NavLinksProps {
   activePath: string;
@@ -23,6 +24,7 @@ export default function Nav(): JSX.Element {
 
   const { pathname } = useLocation();
   const { width } = useWindowSize();
+  const { theme } = useThemeContext();
 
   function toggleDropdown() {
     if (showDropdown) {
@@ -43,7 +45,7 @@ export default function Nav(): JSX.Element {
   }, [width]);
 
   return (
-    <NavStyles>
+    <NavStyles theme={theme}>
       {responsive ? (
         <>
           <DropdownButton close={toggleDropdown} />

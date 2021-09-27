@@ -1,4 +1,6 @@
 import styled, { keyframes } from 'styled-components';
+import { IAppTheme } from '../../hooks/ThemeContext';
+import { AppColors } from '../../styles/appColors';
 
 const slideIn = keyframes`
   0% {
@@ -10,7 +12,6 @@ const slideIn = keyframes`
     right: 0;
   }
 `;
-
 const slideAway = keyframes`
   0% {
     opacity: 1;
@@ -22,12 +23,15 @@ const slideAway = keyframes`
   }
 `;
 
-export const NavStyles = styled.nav`
+export const NavStyles = styled.nav<{ theme: IAppTheme }>`
   display: flex;
   justify-content: end;
 
-  .dropdown {
-    border: 1px solid #fff;
+  div.dropdown {
+    /* background-color: #41424d; */
+    background-color: ${({ theme }) => AppColors(theme).bgg};
+
+    /* border: 1px solid ${({ theme }) => AppColors(theme).text}; */
 
     position: absolute;
     top: 2.5rem;
