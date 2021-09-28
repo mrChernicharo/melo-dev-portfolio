@@ -23,10 +23,12 @@ export const PageStyles = styled.main<{ theme: IAppTheme }>`
   button {
     color: #fff;
     background: transparent;
+    cursor: pointer;
   }
 
   a {
     transition: 0.3s;
+    cursor: pointer;
 
     &:hover {
       text-shadow: 0 0 10px #fff;

@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { PageStyles } from './PageStyles';
 
 import './styles/globalStyles.css';
-import Router from './Router';
+
 import { ThemeContextProvider } from './hooks/ThemeContext';
+import Router from './Router';
 
 ReactDOM.render(
   <React.StrictMode>

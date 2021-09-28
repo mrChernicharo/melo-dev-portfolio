@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Styles } from './Styles';
 
 export default function Home(): JSX.Element {
