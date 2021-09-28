@@ -9,7 +9,7 @@ interface VideoProps {
 export default function VideoPlayer({ src, forwardedRef }: VideoProps): JSX.Element {
   return (
     <VideoStyles>
-      <video ref={forwardedRef}>
+      <video ref={forwardedRef} muted>
         <source src={src} type="video/mp4" />
       </video>
     </VideoStyles>
