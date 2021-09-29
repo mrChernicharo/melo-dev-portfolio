@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from 'react';
+import Lottie, { Options as LottieOptions } from 'react-lottie';
 import VideoPlayer from '../../components/VideoPlayer/VideoPlayer';
 import { Styles } from './Styles';
+import idea from '../../assets/73810-business-idea-animation.json';
 
 const baseURL = 'https://melo-dev-portfolio.s3.us-west-2.amazonaws.com';
 
@@ -23,6 +25,8 @@ export default function Projects(): JSX.Element {
   const melVideoRef = useRef<HTMLVideoElement>(null);
   const melMobileVideoRef = useRef<HTMLVideoElement>(null);
   const oldPortfolioVideoRef = useRef<HTMLVideoElement>(null);
+
+  const animOptions: LottieOptions = { animationData: idea };
 
   const {
     capoeira,
@@ -53,6 +57,8 @@ export default function Projects(): JSX.Element {
       <a href="https://main.d2797vtjwvpw5j.amplifyapp.com" target="_blank">
         Gordinho Defense
       </a>
+
+      <Lottie options={animOptions} width={400} height={400} />
 
       <VideoPlayer src={gordinho} forwardedRef={gordinhoVideoRef} />
       <VideoPlayer src={melMobile} forwardedRef={melMobileVideoRef} />
