@@ -28,20 +28,27 @@ export const NavStyles = styled.nav<{ theme: IAppTheme }>`
   justify-content: end;
 
   div.dropdown {
-    /* background-color: #41424d; */
     background-color: ${({ theme }) => AppColors(theme).secondBg};
 
-    /* border: 1px solid ${({ theme }) => AppColors(theme).text}; */
-
     position: absolute;
-    top: 2.5rem;
     z-index: 2;
-    padding: 1rem;
+    padding: 2rem;
 
     animation: 0.4s ${slideIn};
+    transition: top;
+
+    box-shadow: 0px -100px #41424d;
 
     &.fading {
       animation: 0.6s ${slideAway};
+    }
+
+    &.withdrawn {
+      top: 2.5rem;
+    }
+
+    &.expanded {
+      top: 4rem;
     }
 
     > section {
@@ -66,7 +73,7 @@ export const NavLinksStyles = styled.section<{ responsive: boolean }>`
   a {
     text-decoration: none;
     color: #fff;
-    padding-block: ${({ responsive }) => (responsive ? '0.25rem' : 0)};
+    padding-block: ${({ responsive }) => (responsive ? '0.5rem' : 0)};
 
     &:first-child {
       margin-left: ${({ responsive }) => (responsive ? 0 : '1.5rem')};
@@ -91,7 +98,7 @@ export const NavLinksStyles = styled.section<{ responsive: boolean }>`
 export const DropdownButtonStyles = styled.button`
   margin-inline: 0.5rem;
   border: none;
-  z-index: 2;
+  z-index: 12;
 
   display: flex;
   justify-content: center;

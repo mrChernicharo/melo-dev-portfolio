@@ -41,11 +41,7 @@ export default function Header(): JSX.Element {
   }, [scrollPos]);
 
   return (
-    <Styles
-      theme={theme}
-      scrollPos={scrollPos}
-      className={scrollPos > 120 ? 'whitdrawn' : 'expanded'}
-    >
+    <Styles theme={theme} className={scrollPos > 120 ? 'whitdrawn' : 'expanded'}>
       <div>
         <FaCode size={36} />
       </div>
@@ -67,7 +63,7 @@ export default function Header(): JSX.Element {
           width={50}
           handleDiameter={18}
         />
-        <Nav />
+        <Nav scrollPos={scrollPos} />
       </section>
     </Styles>
   );

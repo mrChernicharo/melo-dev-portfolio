@@ -13,11 +13,15 @@ export interface NavLinksProps {
   responsive: boolean;
 }
 
+interface NavProps {
+  scrollPos: number;
+}
+
 interface DropdownButtonProps {
   close: () => void;
 }
 
-export default function Nav(): JSX.Element {
+export default function Nav({ scrollPos }: NavProps): JSX.Element {
   const [activePath, setActivePath] = useState('/');
   const [showDropdown, setShowDropdown] = useState(false);
   const [responsive, setResponsive] = useState(false);
@@ -52,7 +56,10 @@ export default function Nav(): JSX.Element {
 
           {showDropdown && (
             <>
-              <div className="dropdown" onClick={toggleDropdown}>
+              <div
+                className={`dropdown ${scrollPos < 120 ? 'expanded' : 'withdrawn'}`}
+                onClick={toggleDropdown}
+              >
                 <NavLinks activePath={activePath} responsive={responsive} />
               </div>
 

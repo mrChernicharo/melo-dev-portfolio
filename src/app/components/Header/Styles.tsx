@@ -23,7 +23,7 @@ const bounce = keyframes`
 }
 `;
 
-export const Styles = styled.header<{ theme: IAppTheme; scrollPos: number }>`
+export const Styles = styled.header<{ theme: IAppTheme }>`
   background: ${({ theme }) => AppColors(theme).secondBg};
   width: 100%;
 
@@ -64,5 +64,9 @@ export const Styles = styled.header<{ theme: IAppTheme; scrollPos: number }>`
     flex-direction: row;
     align-items: center;
     justify-content: end;
+
+    > div {
+      z-index: 12;
+    }
   }
 `;
