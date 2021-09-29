@@ -3,7 +3,7 @@ import { IAppTheme } from '../../hooks/ThemeContext';
 import { AppColors } from '../../styles/appColors';
 
 export const Styles = styled.header<{ theme: IAppTheme }>`
-  background: ${({ theme }) => AppColors(theme).bgg};
+  background: ${({ theme }) => AppColors(theme).secondBg};
   width: 100%;
 
   position: fixed;

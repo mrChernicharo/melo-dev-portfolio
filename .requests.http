@@ -1,0 +1,15 @@
+GET http://localhost:3001 HTTP/1.1
+Content-Type: application/json
+
+# POST http://127.0.0.1:61650/v2/segunda-via/aplicacao-mes HTTP/1.1
+# Content-Type: application/json
+# Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Im9VZnRFM0U3RUJwX0ZmTUxUVF9kSDZLUTllaFQwZUk1QmZfR2IzVVR1QmsifQ.eyJhdXQiOnsidSI6eyJpIjoiN0NGMjVENTgtNzQwRC00RDBBLUI3NTQtNkUyN0RCMDMxNkI2IiwibiI6IkZlbGlwZSBDaGVybmljaGFybyJ9LCJzIjoibW9uaXRvcixjaGFtYWRhczp2aXNhby1nZXJhbCxjaGFtYWRhczpjYWxsLWRldGFpbGluZyxjaGFtYWRhczpyZXRlbmNhbyxjaGFtYWRhczpyZXBldGlkYXMsY2hhbWFkYXM6Y29tcGFyYXRpdm8sY3VzdG9tZXItam91cm5leTp1bSxjdXN0b21lci1qb3VybmV5OmRvaXMsc2FsZXM6cHJvZHV0byxzYWxlczpncnVwbyxlc3RhZG8tZGlhbG9nbyxzZWd1bmRhLXZpYSxzdGF0dXMifSwiYXVkIjpbImVMZjJUcnNmMXdha1FjZFQiXSwiaWF0IjoxNjMyMzE1NzYzLCJleHAiOjE2MzQ5MDc3NjN9.iCy5q_0wmg_bCgqaMgsOluzTthNxD8ikpDHoJAH7fRGWV1bYgJ1htYEZB1kIsXZHvuMCFE85rhDdMD262TK_DA0VR-wRdGb_DH4imvtFMHUHt7aadE-evGAvAVxBzYnDKpmEWpLgcC-BtrIiZptZa1udMgkq5c04X7jkRKDSQvMue1mzesrmKP7J4vVX4aNB1Lxil3J_iDA9-y6miKwHz3YV919hn41vxrRSpBMZ9vHVPUp-wm_VuxAPReuykzzqM8-pGZbOqhs9rAtpMXYM_Nt97C6Ojy6mfS7sfj-COyxZHgE0E528Lrq12IWn0OB1bQL4jJRzBKHcJxyMneLba1PFY0oFnK5XohmBYBGrmLcQVVrG_8XMW4Wei8zZLVky6xb9kUJf82dxPcmXpayZhxb89TRwBr00UPZvG7tsgi0yLK4JlTjtX3dvh999uQR76_BA18KrqqY944wo12YVIdn6vi-Jb6JApr7kT3SG0GZEmvagOpeFoNmKOYnBoGBqaRupIgYlKqR_gYu9foaI37T37r5TYHdualdEsgbU72FvzNyCTnN2FRTuOx1MBXz2OMpzQXietnfO_Iv2vA8R5RAO5HHpPvT72lm0xU4cxbAGLTBWPAA2pVN7Wr78apCe9qGVyGdRMASJW9BCt-i49X7IC130_mydkM0lHjeYLng
+# X-XSRF-Token: 6339451a-4b8a-42cf-b9ef-c29889f47977
+
+# {
+#     "s": "1630200000",
+#     "e": "1630551600",
+#     "g": "Fibra Oi Total Varejo",
+#     "a": "",
+#     "r": ""
+# }

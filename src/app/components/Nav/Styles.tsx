@@ -29,7 +29,7 @@ export const NavStyles = styled.nav<{ theme: IAppTheme }>`
 
   div.dropdown {
     /* background-color: #41424d; */
-    background-color: ${({ theme }) => AppColors(theme).bgg};
+    background-color: ${({ theme }) => AppColors(theme).secondBg};
 
     /* border: 1px solid ${({ theme }) => AppColors(theme).text}; */
 

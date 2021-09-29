@@ -15,7 +15,7 @@ export const PageStyles = styled.main<{ theme: IAppTheme }>`
 
   /* border: 1px solid #fff; */
   color: ${({ theme }) => AppColors(theme).text};
-  background-color: ${({ theme }) => AppColors(theme).bg};
+  background-color: ${({ theme }) => AppColors(theme).mainBg};
 
   text-align: center;
   font-size: 1rem;

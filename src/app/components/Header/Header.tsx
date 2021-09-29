@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { FaCode, FaSun, FaMoon } from 'react-icons/fa';
-import Switch from 'react-switch';
-import { useThemeContext } from '../../hooks/ThemeContext';
 
+// import Switch from 'react-switch'; breaks the app in prod due to commonjs/es6 confusions.
+// The solution that works both in dev and prod is to import like this:
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import Switch from 'react-switch/dist/react-switch.dev.js';
+
+import { useThemeContext } from '../../hooks/ThemeContext';
 import Nav from '../Nav/Nav';
 import { Styles } from './Styles';
 

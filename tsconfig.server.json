@@ -5,6 +5,6 @@
     "module": "commonjs",
     "noEmit": false
   },
-  "include": ["src/server/*.ts"],
-  "exclude": ["src/app/*.ts"]
+  "exclude": ["src/*.ts"],
+  "include": ["src/server/*.ts"]
 }
