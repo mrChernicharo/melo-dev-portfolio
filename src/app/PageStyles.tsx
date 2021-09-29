@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { IAppTheme } from './hooks/ThemeContext';
-import { AppColors } from './styles/appColors';
+import { AppColors, darkColors } from './styles/appColors';
 
 export const PageStyles = styled.main<{ theme: IAppTheme }>`
   min-height: 100vh;
@@ -11,7 +11,7 @@ export const PageStyles = styled.main<{ theme: IAppTheme }>`
   justify-content: center;
 
   box-sizing: border-box;
-  padding-top: 40px;
+  padding-top: 4rem;
 
   /* border: 1px solid #fff; */
   color: ${({ theme }) => AppColors(theme).text};
@@ -29,6 +29,8 @@ export const PageStyles = styled.main<{ theme: IAppTheme }>`
   a {
     transition: 0.3s;
     cursor: pointer;
+    color: ${darkColors.heading};
+    text-decoration: none;
 
     &:hover {
       text-shadow: 0 0 10px #fff;

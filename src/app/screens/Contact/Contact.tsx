@@ -2,13 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { Styles } from './Styles';
 
 import Lottie, { Options as LottieOptions } from 'react-lottie';
-import computerGuyAnim from '../../assets/62884-boy-marketing.json';
+import mailAnim from '../../assets/mail.json';
 
 export default function Contact(): JSX.Element {
   const [message, setMessage] = useState('');
 
   const animOptions: LottieOptions = {
-    animationData: computerGuyAnim,
+    animationData: mailAnim,
   };
 
   useEffect(() => {

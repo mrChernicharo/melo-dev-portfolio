@@ -58,7 +58,9 @@ export default function Projects(): JSX.Element {
         Gordinho Defense
       </a>
 
-      <Lottie options={animOptions} width={400} height={400} />
+      <div className="illustration">
+        <Lottie options={animOptions} width={400} height={400} />
+      </div>
 
       <VideoPlayer src={gordinho} forwardedRef={gordinhoVideoRef} />
       <VideoPlayer src={melMobile} forwardedRef={melMobileVideoRef} />

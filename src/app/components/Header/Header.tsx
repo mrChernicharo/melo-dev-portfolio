@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { FaCode, FaSun, FaMoon } from 'react-icons/fa';
 
 // import Switch from 'react-switch'; breaks the app in prod due to commonjs/es6 confusions.
@@ -13,8 +14,11 @@ import { Styles } from './Styles';
 
 export default function Header(): JSX.Element {
   const [checked, setChecked] = useState(false);
+  const [scrollPos, setScrollPos] = useState(0);
 
   const { theme, toggleTheme } = useThemeContext();
+
+  const htmlElement = document.querySelector('html');
 
   // function handleThemeToggle(isChecked: boolean, event: any, id: string) {
   function handleThemeToggle() {
@@ -26,13 +30,29 @@ export default function Header(): JSX.Element {
     console.log(theme);
   }, [theme]);
 
+  useEffect(() => {
+    window.addEventListener('scroll', e => {
+      setScrollPos(htmlElement?.scrollTop || 0);
+    });
+  }, []);
+
+  useEffect(() => {
+    console.log(scrollPos);
+  }, [scrollPos]);
+
   return (
-    <Styles theme={theme}>
+    <Styles
+      theme={theme}
+      scrollPos={scrollPos}
+      className={scrollPos > 120 ? 'whitdrawn' : 'expanded'}
+    >
       <div>
         <FaCode size={36} />
       </div>
 
-      <div>Felipe Chernicharo</div>
+      <Link to="/">
+        <div>Felipe Chernicharo</div>
+      </Link>
 
       <section>
         <Switch

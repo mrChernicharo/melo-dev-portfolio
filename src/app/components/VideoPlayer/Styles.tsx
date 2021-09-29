@@ -10,6 +10,9 @@ export const VideoStyles = styled.div<{ theme: IAppTheme }>`
   padding-top: 1rem;
   padding-bottom: 0.8rem;
 
+  position: relative;
+  z-index: 4;
+
   video {
     height: 100%;
     width: 100%;

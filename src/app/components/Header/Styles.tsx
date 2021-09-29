@@ -1,8 +1,29 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { IAppTheme } from '../../hooks/ThemeContext';
 import { AppColors } from '../../styles/appColors';
 
-export const Styles = styled.header<{ theme: IAppTheme }>`
+const bounce = keyframes`
+0% {
+  height: 3.6rem;
+}
+20% {
+  height:2.2rem;
+}
+40% {
+  height: 3rem;
+}
+60% {
+  height:2.4rem;
+}
+80% {
+  height: 2.65rem;
+}
+100% {
+  height: 2.5rem;
+}
+`;
+
+export const Styles = styled.header<{ theme: IAppTheme; scrollPos: number }>`
   background: ${({ theme }) => AppColors(theme).secondBg};
   width: 100%;
 
@@ -14,6 +35,18 @@ export const Styles = styled.header<{ theme: IAppTheme }>`
   align-items: center;
 
   color: #fff;
+  z-index: 10;
+
+  transform-origin: top;
+  transition: all 0.5s ease-in-out;
+
+  &.whitdrawn {
+    animation: 0.8s ${bounce};
+    height: 2.5rem;
+  }
+  &.expanded {
+    height: 4rem;
+  }
 
   .react-switch-bg > div {
     border: none;
