@@ -21,8 +21,6 @@ export default function About(): JSX.Element {
   const animOptions: LottieOptions = {
     animationData: computersAnimation,
   };
-
-  const arr = ['jeu', 'hey', 'ho'];
   return (
     <Styles>
       <span>About</span>
@@ -98,7 +96,7 @@ export default function About(): JSX.Element {
         <div key={skill.name}>
           {skill.name}
 
-          <img src={`src/app/assets/${skill.logo}`} width={42} height={42} />
+          <img src={skill.logo} width={42} height={42} />
         </div>
       ))}
     </Styles>

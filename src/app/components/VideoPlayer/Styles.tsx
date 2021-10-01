@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { IAppTheme } from '../../hooks/ThemeContext';
-import { AppColors } from '../../styles/appColors';
+import { AppColors } from '../../utils/appColors';
 
 export const VideoStyles = styled.div<{ theme: IAppTheme }>`
   /* border: 1px solid red; */

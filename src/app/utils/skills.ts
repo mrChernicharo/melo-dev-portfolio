@@ -22,7 +22,7 @@ export const skillsList: Skill[] = [
     category: 'languages',
     start: new Date(2018, 2, 23),
     xpTime: '',
-    logo: 'icons/javascript.svg',
+    logo: '/icons/javascript.svg',
     level: 10,
   },
   {
@@ -30,7 +30,7 @@ export const skillsList: Skill[] = [
     category: 'languages',
     start: new Date(2018, 1, 18),
     xpTime: '',
-    logo: 'icons/css.svg',
+    logo: '/icons/css.svg',
     level: 9,
   },
   {
@@ -38,7 +38,7 @@ export const skillsList: Skill[] = [
     category: 'languages',
     start: new Date(2017, 10, 2),
     xpTime: '',
-    logo: 'icons/html5.svg',
+    logo: '/icons/html5.svg',
     level: 10,
   },
   {
@@ -46,7 +46,7 @@ export const skillsList: Skill[] = [
     category: 'languages',
     start: new Date(2019, 11, 12),
     xpTime: '',
-    logo: 'icons/typescript.svg',
+    logo: '/icons/typescript.svg',
     level: 9,
   },
 
@@ -55,7 +55,7 @@ export const skillsList: Skill[] = [
     category: 'languages',
     start: new Date(2019, 3, 28),
     xpTime: '',
-    logo: 'icons/python.svg',
+    logo: '/icons/python.svg',
     level: 6,
   },
   {
@@ -63,7 +63,7 @@ export const skillsList: Skill[] = [
     category: 'languages',
     start: new Date(2021, 3, 30),
     xpTime: '',
-    logo: 'icons/rust.svg',
+    logo: '/icons/rust.svg',
     level: 2,
   },
   {
@@ -71,7 +71,7 @@ export const skillsList: Skill[] = [
     category: 'languages',
     start: new Date(2019, 2, 21),
     xpTime: '',
-    logo: 'icons/php.svg',
+    logo: '/icons/php.svg',
     level: 4,
   },
   {
@@ -79,7 +79,7 @@ export const skillsList: Skill[] = [
     category: 'frameworks',
     start: new Date(2019, 12, 1),
     xpTime: '',
-    logo: 'icons/angular.svg',
+    logo: '/icons/angular.svg',
     level: 9,
   },
   {
@@ -87,7 +87,7 @@ export const skillsList: Skill[] = [
     category: 'platforms',
     start: new Date(2016, 5, 22),
     xpTime: '',
-    logo: 'icons/apple.svg',
+    logo: '/icons/apple.svg',
     level: 8,
   },
   {
@@ -95,7 +95,7 @@ export const skillsList: Skill[] = [
     category: 'libraries',
     start: new Date(2019, 5, 4),
     xpTime: '',
-    logo: 'icons/axios.svg',
+    logo: '/icons/axios.svg',
     level: 4,
   },
   {
@@ -103,7 +103,7 @@ export const skillsList: Skill[] = [
     category: 'platforms',
     start: new Date(2020, 2, 31),
     xpTime: '',
-    logo: 'icons/aws.svg',
+    logo: '/icons/aws.svg',
     level: 4,
   },
   {
@@ -111,7 +111,7 @@ export const skillsList: Skill[] = [
     category: 'libraries',
     start: new Date(2019, 5, 6),
     xpTime: '',
-    logo: 'icons/babel.svg',
+    logo: '/icons/babel.svg',
     level: 6,
   },
   {
@@ -119,7 +119,7 @@ export const skillsList: Skill[] = [
     category: 'tools',
     start: new Date(2019, 6, 12),
     xpTime: '',
-    logo: 'icons/bash.png',
+    logo: '/icons/bash.png',
     level: 5,
   },
   {
@@ -127,7 +127,7 @@ export const skillsList: Skill[] = [
     category: 'libraries',
     start: new Date(2018, 5, 25),
     xpTime: '',
-    logo: 'icons/bootstrap.svg',
+    logo: '/icons/bootstrap.svg',
     level: 7,
   },
 
@@ -136,7 +136,7 @@ export const skillsList: Skill[] = [
     category: 'libraries',
     start: new Date(2020, 3, 18),
     xpTime: '',
-    logo: 'icons/d3.png',
+    logo: '/icons/d3.png',
     level: 7,
   },
   {
@@ -144,7 +144,7 @@ export const skillsList: Skill[] = [
     category: 'libraries',
     start: new Date(2020, 3, 27),
     xpTime: '',
-    logo: 'icons/date-fns.svg',
+    logo: '/icons/date-fns.svg',
     level: 4,
   },
   {
@@ -152,7 +152,7 @@ export const skillsList: Skill[] = [
     category: 'libraries',
     start: new Date(2020, 5, 5),
     xpTime: '',
-    logo: 'icons/echarts.svg',
+    logo: '/icons/echarts.svg',
     level: 9,
   },
   {
@@ -160,7 +160,7 @@ export const skillsList: Skill[] = [
     category: 'libraries',
     start: new Date(2019, 10, 21),
     xpTime: '',
-    logo: 'icons/express.svg',
+    logo: '/icons/express.svg',
     level: 6,
   },
   {
@@ -168,7 +168,7 @@ export const skillsList: Skill[] = [
     category: 'libraries',
     start: new Date(2020, 7, 13),
     xpTime: '',
-    logo: 'icons/framer-motion.svg',
+    logo: '/icons/framer-motion.svg',
     level: 9,
   },
   {
@@ -176,7 +176,7 @@ export const skillsList: Skill[] = [
     category: 'platforms',
     start: new Date(2019, 11, 4),
     xpTime: '',
-    logo: 'icons/google-cloud.svg',
+    logo: '/icons/google-cloud.svg',
     level: 7,
   },
   // {
@@ -192,7 +192,7 @@ export const skillsList: Skill[] = [
     category: 'tools',
     start: new Date(2020, 4, 6),
     xpTime: '',
-    logo: 'icons/dbeaver.svg',
+    logo: '/icons/dbeaver.svg',
     level: 4,
   },
   {
@@ -200,7 +200,7 @@ export const skillsList: Skill[] = [
     category: 'tools',
     start: new Date(2019, 8, 25),
     xpTime: '',
-    logo: 'icons/docker.svg',
+    logo: '/icons/docker.svg',
     level: 4,
   },
   {
@@ -208,7 +208,7 @@ export const skillsList: Skill[] = [
     category: 'tools',
     start: new Date(2020, 2, 23),
     xpTime: '',
-    logo: 'icons/figma.svg',
+    logo: '/icons/figma.svg',
     level: 8,
   },
   {
@@ -216,7 +216,7 @@ export const skillsList: Skill[] = [
     category: 'platforms',
     start: new Date(2020, 0, 12),
     xpTime: '',
-    logo: 'icons/firebase.svg',
+    logo: '/icons/firebase.svg',
     level: 9,
   },
   {
@@ -224,7 +224,7 @@ export const skillsList: Skill[] = [
     category: 'databases',
     start: new Date(2020, 1, 2),
     xpTime: '',
-    logo: 'icons/firestore.png',
+    logo: '/icons/firestore.png',
     level: 10,
   },
   {
@@ -232,7 +232,7 @@ export const skillsList: Skill[] = [
     category: 'tools',
     start: new Date(2018, 11, 17),
     xpTime: '',
-    logo: 'icons/git.svg',
+    logo: '/icons/git.svg',
     level: 9,
   },
   {
@@ -240,7 +240,7 @@ export const skillsList: Skill[] = [
     category: 'platforms',
     start: new Date(2019, 0, 2),
     xpTime: '',
-    logo: 'icons/github.svg',
+    logo: '/icons/github.svg',
     level: 5,
   },
   {
@@ -248,7 +248,7 @@ export const skillsList: Skill[] = [
     category: 'platforms',
     start: new Date(2020, 3, 17),
     xpTime: '',
-    logo: 'icons/gitlab-tile.svg',
+    logo: '/icons/gitlab-tile.svg',
     level: 9,
   },
   {
@@ -256,7 +256,7 @@ export const skillsList: Skill[] = [
     category: 'tools',
     start: new Date(2019, 10, 11),
     xpTime: '',
-    logo: 'icons/insomnia.svg',
+    logo: '/icons/insomnia.svg',
     level: 10,
   },
 
@@ -265,7 +265,7 @@ export const skillsList: Skill[] = [
     category: 'libraries',
     start: new Date(2020, 0, 26),
     xpTime: '',
-    logo: 'icons/material.png',
+    logo: '/icons/material.png',
     level: 9,
   },
   {
@@ -273,7 +273,7 @@ export const skillsList: Skill[] = [
     category: 'tools',
     start: new Date(2018, 8, 6),
     xpTime: '',
-    logo: 'icons/mobirise.png',
+    logo: '/icons/mobirise.png',
     level: 8,
   },
   {
@@ -281,7 +281,7 @@ export const skillsList: Skill[] = [
     category: 'libraries',
     start: new Date(2020, 2, 9),
     xpTime: '',
-    logo: 'icons/ngrx.svg',
+    logo: '/icons/ngrx.svg',
     level: 5,
   },
   {
@@ -289,7 +289,7 @@ export const skillsList: Skill[] = [
     category: 'databases',
     start: new Date(2019, 6, 11),
     xpTime: '',
-    logo: 'icons/mysql.svg',
+    logo: '/icons/mysql.svg',
     level: 5,
   },
   {
@@ -297,7 +297,7 @@ export const skillsList: Skill[] = [
     category: 'databases',
     start: new Date(2020, 3, 30),
     xpTime: '',
-    logo: 'icons/mongodb.svg',
+    logo: '/icons/mongodb.svg',
     level: 6,
   },
 
@@ -306,7 +306,7 @@ export const skillsList: Skill[] = [
     category: 'frameworks',
     start: new Date(2019, 6, 29),
     xpTime: '',
-    logo: 'icons/react.svg',
+    logo: '/icons/react.svg',
     level: 9,
   },
   {
@@ -314,7 +314,7 @@ export const skillsList: Skill[] = [
     category: 'frameworks',
     start: new Date(2019, 10, 21),
     xpTime: '',
-    logo: 'icons/react-native.svg',
+    logo: '/icons/react-native.svg',
     level: 7,
   },
   {
@@ -322,7 +322,7 @@ export const skillsList: Skill[] = [
     category: 'databases',
     start: new Date(2020, 5, 20),
     xpTime: '',
-    logo: 'icons/realtime-db.png',
+    logo: '/icons/realtime-db.png',
     level: 9,
   },
   {
@@ -330,7 +330,7 @@ export const skillsList: Skill[] = [
     category: 'libraries',
     start: new Date(2020, 3, 21),
     xpTime: '',
-    logo: 'icons/rxjs.svg',
+    logo: '/icons/rxjs.svg',
     level: 9,
   },
   {
@@ -338,7 +338,7 @@ export const skillsList: Skill[] = [
     category: 'languages',
     start: new Date(2019, 2, 11),
     xpTime: '',
-    logo: 'icons/database.svg',
+    logo: '/icons/database.svg',
     level: 6,
   },
   {
@@ -346,7 +346,7 @@ export const skillsList: Skill[] = [
     category: 'tools',
     start: new Date(2018, 6, 1),
     xpTime: '',
-    logo: 'icons/vscode.png',
+    logo: '/icons/vscode.png',
     level: 10,
   },
   {
@@ -354,7 +354,7 @@ export const skillsList: Skill[] = [
     category: 'frameworks',
     start: new Date(2019, 11, 2),
     xpTime: '',
-    logo: 'icons/node.svg',
+    logo: '/icons/node.svg',
     level: 7,
   },
   {
@@ -362,7 +362,7 @@ export const skillsList: Skill[] = [
     category: 'tools',
     start: new Date(2019, 5, 19),
     xpTime: '',
-    logo: 'icons/mamp.png',
+    logo: '/icons/mamp.png',
     level: 5,
   },
   {
@@ -370,7 +370,7 @@ export const skillsList: Skill[] = [
     category: 'tools',
     start: new Date(2020, 3, 13),
     xpTime: '',
-    logo: 'icons/notion.svg',
+    logo: '/icons/notion.svg',
     level: 5,
   },
 
@@ -379,7 +379,7 @@ export const skillsList: Skill[] = [
     category: 'libraries',
     start: new Date(2019, 2, 11),
     xpTime: '',
-    logo: 'icons/jquery.svg',
+    logo: '/icons/jquery.svg',
     level: 7,
   },
   {
@@ -387,7 +387,7 @@ export const skillsList: Skill[] = [
     category: 'libraries',
     start: new Date(2020, 4, 16),
     xpTime: '',
-    logo: 'icons/material-ui.svg',
+    logo: '/icons/material-ui.svg',
     level: 4,
   },
   {
@@ -395,7 +395,7 @@ export const skillsList: Skill[] = [
     category: 'libraries',
     start: new Date(2020, 10, 11),
     xpTime: '',
-    logo: 'icons/nebular.png',
+    logo: '/icons/nebular.png',
     level: 9,
   },
   {
@@ -403,7 +403,7 @@ export const skillsList: Skill[] = [
     category: 'libraries',
     start: new Date(2020, 5, 17),
     xpTime: '',
-    logo: 'icons/nodemailer.png',
+    logo: '/icons/nodemailer.png',
     level: 8,
   },
   {
@@ -411,7 +411,7 @@ export const skillsList: Skill[] = [
     category: 'libraries',
     start: new Date(2020, 1, 11),
     xpTime: '',
-    logo: 'icons/nodemon.png',
+    logo: '/icons/nodemon.png',
     level: 9,
   },
   {
@@ -419,7 +419,7 @@ export const skillsList: Skill[] = [
     category: 'tools',
     start: new Date(2019, 2, 14),
     xpTime: '',
-    logo: 'icons/npm.svg',
+    logo: '/icons/npm.svg',
     level: 10,
   },
   {
@@ -427,7 +427,7 @@ export const skillsList: Skill[] = [
     category: 'libraries',
     start: new Date(2020, 2, 14),
     xpTime: '',
-    logo: 'icons/numpy.svg',
+    logo: '/icons/numpy.svg',
     level: 5,
   },
   {
@@ -435,7 +435,7 @@ export const skillsList: Skill[] = [
     category: 'tools',
     start: new Date(2019, 10, 12),
     xpTime: '',
-    logo: 'icons/zsh.jpg',
+    logo: '/icons/zsh.jpg',
     level: 8,
   },
   {
@@ -443,7 +443,7 @@ export const skillsList: Skill[] = [
     category: 'libraries',
     start: new Date(2020, 2, 13),
     xpTime: '',
-    logo: 'icons/pandas.svg',
+    logo: '/icons/pandas.svg',
     level: 5,
   },
   {
@@ -451,7 +451,7 @@ export const skillsList: Skill[] = [
     category: 'tools',
     start: new Date(2019, 10, 11),
     xpTime: '',
-    logo: 'icons/pixlr.svg',
+    logo: '/icons/pixlr.svg',
     level: 8,
   },
   {
@@ -459,7 +459,7 @@ export const skillsList: Skill[] = [
     category: 'databases',
     start: new Date(2020, 0, 21),
     xpTime: '',
-    logo: 'icons/postgres.svg',
+    logo: '/icons/postgres.svg',
     level: 6,
   },
   {
@@ -467,7 +467,7 @@ export const skillsList: Skill[] = [
     category: 'libraries',
     start: new Date(2021, 1, 11),
     xpTime: '',
-    logo: 'icons/puppeteer.svg',
+    logo: '/icons/puppeteer.svg',
     level: 5,
   },
   {
@@ -475,7 +475,7 @@ export const skillsList: Skill[] = [
     category: 'libraries',
     start: new Date(2019, 8, 1),
     xpTime: '',
-    logo: 'icons/pygame.png',
+    logo: '/icons/pygame.png',
     level: 7,
   },
   {
@@ -483,7 +483,7 @@ export const skillsList: Skill[] = [
     category: 'libraries',
     start: new Date(2020, 11, 21),
     xpTime: '',
-    logo: 'icons/redux.svg',
+    logo: '/icons/redux.svg',
     level: 7,
   },
   {
@@ -491,7 +491,7 @@ export const skillsList: Skill[] = [
     category: 'databases',
     start: new Date(2020, 8, 29),
     xpTime: '',
-    logo: 'icons/redis.svg',
+    logo: '/icons/redis.svg',
     level: 7,
   },
   {
@@ -499,7 +499,7 @@ export const skillsList: Skill[] = [
     category: 'frameworks',
     start: new Date(2020, 3, 9),
     xpTime: '',
-    logo: 'icons/sass.png',
+    logo: '/icons/sass.png',
     level: 8,
   },
   {
@@ -507,7 +507,7 @@ export const skillsList: Skill[] = [
     category: 'libraries',
     start: new Date(2020, 4, 19),
     xpTime: '',
-    logo: 'icons/styled-components.svg',
+    logo: '/icons/styled-components.svg',
     level: 10,
   },
   {
@@ -515,7 +515,7 @@ export const skillsList: Skill[] = [
     category: 'databases',
     start: new Date(2020, 1, 11),
     xpTime: '',
-    logo: 'icons/sqlite.png',
+    logo: '/icons/sqlite.png',
     level: 5,
   },
   {
@@ -523,7 +523,7 @@ export const skillsList: Skill[] = [
     category: 'platforms',
     start: new Date(2019, 12, 24),
     xpTime: '',
-    logo: 'icons/stackoverflow.svg',
+    logo: '/icons/stackoverflow.svg',
     level: 10,
   },
   {
@@ -531,7 +531,7 @@ export const skillsList: Skill[] = [
     category: 'libraries',
     start: new Date(2021, 0, 14),
     xpTime: '',
-    logo: 'icons/tailwind.svg',
+    logo: '/icons/tailwind.svg',
     level: 4,
   },
   {
@@ -539,7 +539,7 @@ export const skillsList: Skill[] = [
     category: 'libraries',
     start: new Date(2021, 3, 2),
     xpTime: '',
-    logo: 'icons/three.png',
+    logo: '/icons/three.png',
     level: 3,
   },
 
@@ -548,7 +548,7 @@ export const skillsList: Skill[] = [
     category: 'platforms',
     start: new Date(2020, 7, 11),
     xpTime: '',
-    logo: 'icons/vercel.svg',
+    logo: '/icons/vercel.svg',
     level: 4,
   },
   {
@@ -556,7 +556,7 @@ export const skillsList: Skill[] = [
     category: 'tools',
     start: new Date(2020, 0, 6),
     xpTime: '',
-    logo: 'icons/vim.svg',
+    logo: '/icons/vim.svg',
     level: 4,
   },
   {
@@ -564,7 +564,7 @@ export const skillsList: Skill[] = [
     category: 'frameworks',
     start: new Date(2021, 3, 1),
     xpTime: '',
-    logo: 'icons/vue.svg',
+    logo: '/icons/vue.svg',
     level: 5,
   },
   {
@@ -572,7 +572,7 @@ export const skillsList: Skill[] = [
     category: 'tools',
     start: new Date(2019, 4, 12),
     xpTime: '',
-    logo: 'icons/wamp.svg',
+    logo: '/icons/wamp.svg',
     level: 5,
   },
   {
@@ -580,7 +580,7 @@ export const skillsList: Skill[] = [
     category: 'tools',
     start: new Date(2021, 4, 12),
     xpTime: '',
-    logo: 'icons/web-assembly.svg',
+    logo: '/icons/web-assembly.svg',
     level: 2,
   },
   {
@@ -588,7 +588,7 @@ export const skillsList: Skill[] = [
     category: 'libraries',
     start: new Date(2020, 4, 16),
     xpTime: '',
-    logo: 'icons/webpack.svg',
+    logo: '/icons/webpack.svg',
     level: 4,
   },
   {
@@ -596,7 +596,7 @@ export const skillsList: Skill[] = [
     category: 'tools',
     start: new Date(2019, 11, 2),
     xpTime: '',
-    logo: 'icons/yarn.svg',
+    logo: '/icons/yarn.svg',
     level: 8,
   },
   {
@@ -604,7 +604,7 @@ export const skillsList: Skill[] = [
     category: 'frameworks',
     start: new Date(2021, 0, 11),
     xpTime: '',
-    logo: 'icons/next.svg',
+    logo: '/icons/next.svg',
     level: 7,
   },
 ].map(

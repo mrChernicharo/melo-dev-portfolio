@@ -4,7 +4,7 @@ import { Styles } from './Styles';
 import Lottie, { Options as LottieOptions } from 'react-lottie';
 import workingAnim from '../../assets/lottie/77409-working.json';
 
-import hero from '../../assets/images/nasa-hero.jpg';
+import hero from '/images/nasa-hero.jpg';
 
 export default function Home(): JSX.Element {
   const isStopped = false;

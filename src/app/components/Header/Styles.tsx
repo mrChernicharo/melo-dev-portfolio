@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 import { IAppTheme } from '../../hooks/ThemeContext';
-import { AppColors } from '../../styles/appColors';
+import { AppColors } from '../../utils/appColors';
 
 const bounce = keyframes`
 0% {
