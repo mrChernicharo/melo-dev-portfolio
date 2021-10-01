@@ -35,9 +35,9 @@ export const NavStyles = styled.nav<{ theme: IAppTheme }>`
     padding: 2rem;
 
     animation: 0.4s ${slideIn};
-    transition: top;
 
     box-shadow: 0px -100px #41424d;
+    transition: all 0.5s ease-in-out;
 
     &.fading {
       animation: 0.6s ${slideAway};
@@ -56,6 +56,27 @@ export const NavStyles = styled.nav<{ theme: IAppTheme }>`
       flex-direction: column;
       justify-items: center;
       align-items: center;
+    }
+  }
+
+  .dropdown-shadow {
+    position: absolute;
+    width: 133px;
+    height: 200px;
+    z-index: 3;
+    box-shadow: inset 0px 2px 6px rgba(0, 0, 0, 0.4);
+
+    animation: 0.4s ${slideIn};
+
+    &.fading {
+      animation: 0.6s ${slideAway};
+    }
+    &.withdrawn {
+      top: 2.5rem;
+    }
+
+    &.expanded {
+      top: 4rem;
     }
   }
 

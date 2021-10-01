@@ -33,6 +33,7 @@ export default function Nav({ scrollPos }: NavProps): JSX.Element {
   function toggleDropdown() {
     if (showDropdown) {
       document.querySelector('.dropdown')?.classList.add('fading');
+      document.querySelector('.dropdown-shadow')?.classList.add('fading');
 
       setTimeout(() => setShowDropdown(!showDropdown), 400);
     } else {
@@ -62,6 +63,12 @@ export default function Nav({ scrollPos }: NavProps): JSX.Element {
               >
                 <NavLinks activePath={activePath} responsive={responsive} />
               </div>
+
+              <div
+                className={`dropdown-shadow ${
+                  scrollPos < 120 ? 'expanded' : 'withdrawn'
+                }`}
+              ></div>
 
               <div className="overlay" onClick={toggleDropdown}></div>
             </>
