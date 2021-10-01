@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Styles } from './Styles';
 
 import Lottie, { Options as LottieOptions } from 'react-lottie';
-import mailAnim from '../../assets/mail.json';
+import mailAnim from '../../assets/lottie/mail.json';
 
 export default function Contact(): JSX.Element {
   const [message, setMessage] = useState('');

@@ -3,7 +3,7 @@ import { Styles } from './Styles';
 
 import Lottie, { Options as LottieOptions } from 'react-lottie';
 
-import computers from '../../assets/48786-tech-reviews.json';
+import computers from '../../assets/lottie/48786-tech-reviews.json';
 
 export default function About(): JSX.Element {
   const animOptions: LottieOptions = {

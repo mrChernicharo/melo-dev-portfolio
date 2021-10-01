@@ -4,7 +4,6 @@ import { FaCode, FaSun, FaMoon } from 'react-icons/fa';
 
 // import Switch from 'react-switch'; breaks the app in prod due to commonjs/es6 confusions.
 // The solution that works both in dev and prod is to import like this:
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import Switch from 'react-switch/dist/react-switch.dev.js';
 
@@ -36,9 +35,9 @@ export default function Header(): JSX.Element {
     });
   }, []);
 
-  useEffect(() => {
-    console.log(scrollPos);
-  }, [scrollPos]);
+  // useEffect(() => {
+  //   console.log(scrollPos);
+  // }, [scrollPos]);
 
   return (
     <Styles theme={theme} className={scrollPos > 120 ? 'whitdrawn' : 'expanded'}>
