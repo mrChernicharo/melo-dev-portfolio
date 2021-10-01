@@ -14,19 +14,9 @@ export interface Skill {
   xpTime: string; // 1 year and 3 months;
   logo: string;
   level: 2 | 3 | 4 | 5;
-  // category: string;
 }
 
-const skillsListFactory = (data: Skill[]) => {
-  return data.reduce((acc, skill) => {
-    //@ts-ignore
-    acc[skill.name] = { ...skill };
-
-    return acc;
-  }, {});
-};
-
-export const skillsData: Skill[] = [
+export const skillsList: Skill[] = [
   {
     name: 'Javascript',
     category: 'languages',
@@ -617,13 +607,15 @@ export const skillsData: Skill[] = [
     logo: 'icons/next.svg',
     level: 7,
   },
-].map(item => {
-  return { ...item, xpTime: getXPTime(item.start) } as Skill;
-});
+].map(
+  item =>
+    ({
+      ...item,
+      xpTime: getXPTime(item.start),
+    } as Skill)
+);
 
-export const skillsList = skillsListFactory(skillsData);
-
-export const techCategories: string[] = skillsData.reduce((acc, tech) => {
+export const techCategories: string[] = skillsList.reduce((acc, tech) => {
   if (!acc.find(category => category === tech.category)) {
     //@ts-ignore
     acc.push(tech.category);

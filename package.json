@@ -49,6 +49,7 @@
     "vite": "^2.5.10"
   },
   "dependencies": {
+    "@formspree/react": "^2.2.4",
     "date-fns": "^2.24.0",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
