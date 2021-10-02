@@ -27,7 +27,7 @@ export default function Nav({ scrollPos }: NavProps): JSX.Element {
   const [responsive, setResponsive] = useState(false);
 
   const { pathname } = useLocation();
-  const { width } = useWindowSize();
+  const { width, breakpoint } = useWindowSize();
   const { theme } = useThemeContext();
 
   function toggleDropdown() {
@@ -45,7 +45,7 @@ export default function Nav({ scrollPos }: NavProps): JSX.Element {
   }, [pathname]);
 
   useEffect(() => {
-    setResponsive(width < 570);
+    setResponsive(v => breakpoint === 'mobile' || breakpoint === 'tablet');
   }, [width]);
 
   return (
