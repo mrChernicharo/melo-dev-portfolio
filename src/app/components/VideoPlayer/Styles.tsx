@@ -4,9 +4,9 @@ import { AppColors } from '../../utils/appColors';
 
 export const VideoStyles = styled.div<{ theme: IAppTheme }>`
   /* border: 1px solid red; */
-  background: ${({ theme }) => AppColors(theme).thirdBg};
+  /* background: ${({ theme }) => AppColors(theme).thirdBg}; */
   width: 100%;
-  margin: 1rem 0 3rem;
+  /* margin: 1rem 0 3rem; */
   padding-top: 1rem;
   padding-bottom: 0.8rem;
 

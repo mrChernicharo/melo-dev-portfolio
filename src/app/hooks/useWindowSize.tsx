@@ -5,12 +5,12 @@ interface Size {
   height: number;
 }
 
-type Breakpoint = 'mobile' | 'tablet' | 'desktop' | 'wide';
+export type IBreakpoint = 'mobile' | 'tablet' | 'desktop' | 'wide';
 
 interface WindowDimensions {
   width: number;
   height: number;
-  breakpoint: Breakpoint;
+  breakpoint: IBreakpoint;
 }
 
 // Hook
@@ -19,7 +19,7 @@ export function useWindowSize(): WindowDimensions {
     width: 0,
     height: 0,
   });
-  const [breakpoint, setBreakpoint] = useState<Breakpoint>('mobile');
+  const [breakpoint, setBreakpoint] = useState<IBreakpoint>('mobile');
 
   const getBreakpoint = () => {
     const w = window.innerWidth;

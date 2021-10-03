@@ -1,5 +1,18 @@
 import { intervalToDuration, Duration } from 'date-fns';
 
+const baseURL = 'https://melo-dev-portfolio.s3.us-west-2.amazonaws.com';
+
+export const videoURLs = {
+  capoeira: `${baseURL}/hello-capoeira.mp4`,
+  d3Charts: `${baseURL}/D3-charts.mp4`,
+  gordinho: `${baseURL}/gordinho_3D.mp4`,
+  happyPlants: `${baseURL}/happy-plants.mp4`,
+  lacos: `${baseURL}/Lacos-portfolio.mp4`,
+  mel: `${baseURL}/mel-portfolio.mp4`,
+  melMobile: `${baseURL}/Mel-mobile.mp4`,
+  oldPortfolio: `${baseURL}/old-portfolio.mp4`,
+};
+
 export function getXPTime(startDate: Date): string {
   const duration: globalThis.Duration = intervalToDuration({
     start: new Date(startDate),

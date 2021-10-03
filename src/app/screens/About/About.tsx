@@ -16,14 +16,16 @@ import { FiMail, FiMapPin } from 'react-icons/fi';
 import computersAnimation from '../../assets/lottie/48786-tech-reviews.json';
 
 import { techCategories, skillsList } from '../../utils/skills';
+import { useWindowSize } from '../../hooks/useWindowSize';
 
 export default function About(): JSX.Element {
+  const { breakpoint } = useWindowSize();
   const animOptions: LottieOptions = {
     animationData: computersAnimation,
   };
   return (
-    <Styles>
-      <span>About</span>
+    <Styles breakpoint={breakpoint}>
+      <h1>About</h1>
 
       <Lottie options={animOptions} width={400} height={400} />
 
@@ -92,13 +94,15 @@ export default function About(): JSX.Element {
         </a>
       </button>
 
-      {skillsList.map(skill => (
-        <div key={skill.name}>
-          {skill.name}
-
-          <img src={skill.logo} width={42} height={42} />
-        </div>
-      ))}
+      <h2>Stuff that I like to work with</h2>
+      <div className="skillList">
+        {skillsList.map(skill => (
+          <div className="skill-div" key={skill.name}>
+            <img src={skill.logo} />
+            <span>{skill.name}</span>
+          </div>
+        ))}
+      </div>
     </Styles>
   );
 }

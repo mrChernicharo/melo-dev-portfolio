@@ -6,18 +6,7 @@ import ideaAnimation from '../../assets/lottie/73810-business-idea-animation.jso
 
 import { techCategories, skillsList } from '../../utils/skills';
 
-const baseURL = 'https://melo-dev-portfolio.s3.us-west-2.amazonaws.com';
-
-const videoURLs = {
-  capoeira: `${baseURL}/hello-capoeira.mp4`,
-  d3Charts: `${baseURL}/D3-charts.mp4`,
-  gordinho: `${baseURL}/gordinho_3D.mp4`,
-  happyPlants: `${baseURL}/happy-plants.mp4`,
-  lacos: `${baseURL}/Lacos-portfolio.mp4`,
-  mel: `${baseURL}/mel-portfolio.mp4`,
-  melMobile: `${baseURL}/Mel-mobile.mp4`,
-  oldPortfolio: `${baseURL}/old-portfolio.mp4`,
-};
+import { videoURLs } from '../../utils/helpers';
 
 export interface VideoCard {
   videoUrl: string;

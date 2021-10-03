@@ -5,11 +5,6 @@ import { AppColors, darkColors } from './utils/appColors';
 export const PageStyles = styled.main<{ theme: IAppTheme }>`
   min-height: 100vh;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
   box-sizing: border-box;
   padding-top: 4rem;
 
