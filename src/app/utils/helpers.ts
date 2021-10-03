@@ -47,3 +47,12 @@ export function getXPTime(startDate: Date): string {
   }
   return response.join(' ');
 }
+
+export const gordinhoPix = [
+  '/images/gordimPix/00.png',
+  '/images/gordimPix/01.png',
+  '/images/gordimPix/02.png',
+  '/images/gordimPix/03.png',
+  '/images/gordimPix/04.png',
+  '/images/gordimPix/05.png',
+];

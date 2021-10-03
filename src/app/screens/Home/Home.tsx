@@ -16,7 +16,7 @@ import { HomeStyles } from './Styles';
 
 import { FaLinkedin, FaGithub, FaStackOverflow } from 'react-icons/fa';
 import { FiMapPin, FiMail } from 'react-icons/fi';
-import VideoPlayer from '../../components/VideoPlayer';
+import VideoPlayer from '../../components/VideoPlayer/VideoPlayer';
 import { getProject, projects } from '../../utils/projects';
 
 export default function Home(): JSX.Element {

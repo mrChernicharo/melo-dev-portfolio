@@ -7,7 +7,7 @@ import { techCategories, skillsList } from '../../utils/skills';
 
 import { videoURLs } from '../../utils/helpers';
 import { projects } from '../../utils/projects';
-import ProjectCard from '../../components/ProjectCard';
+import ProjectCard from '../../components/ProjectCard/ProjectCard';
 
 export interface VideoCard {
   videoUrl: string;

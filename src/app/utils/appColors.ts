@@ -8,6 +8,7 @@ interface IColorScheme {
   heading: string;
   text: string;
   secondText: string;
+  buttonText: string;
 
   base: string;
   secondBase: string;
@@ -19,11 +20,12 @@ interface IColorScheme {
 export const lightColors = {
   mainBg: '#eeeefe',
   secondBg: '#41424d',
-  thirdBg: '#abcdef',
+  thirdBg: '#cdcdde',
 
   heading: '#0d0d0d',
   text: '#41424d',
   secondText: '#79788a',
+  buttonText: '#41424d',
 
   base: '#eff0f3',
   secondBase: '#fffffe',
@@ -44,6 +46,7 @@ export const darkColors = {
   heading: '#fffffe',
   text: '#a7a9be',
   secondText: '#6878be',
+  buttonText: '#fff',
 
   base: '#fffffe',
   secondBase: '#a7a9be',

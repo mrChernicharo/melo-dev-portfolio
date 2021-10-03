@@ -80,10 +80,12 @@ export type SkillNames =
   | 'Styled Components'
   | 'SqLite'
   | 'stackoverflow'
+  | 'Stripe'
   | 'tailwind'
   | 'threejs'
   | 'vercel'
   | 'Vim'
+  | 'vite'
   | 'vue'
   | 'Wamp'
   | 'WebAssembly'
@@ -254,14 +256,14 @@ export const skillsList: Skill[] = [
     logo: '/icons/google-cloud.svg',
     level: 7,
   },
-  // {
-  //   name: "gridster",
-  //   category: "libraries",
-  //   start: new Date(2019, 5, 11),
-  //   xpTime: "",
-  //   logo: "icons/gridster.png",
-  //   level: 8,
-  // },
+  {
+    name: 'gridster',
+    category: 'libraries',
+    start: new Date(2019, 5, 11),
+    xpTime: '',
+    logo: 'icons/gridster.png',
+    level: 8,
+  },
   {
     name: 'DBeaver',
     category: 'tools',
@@ -596,10 +598,18 @@ export const skillsList: Skill[] = [
   {
     name: 'stackoverflow',
     category: 'platforms',
-    start: new Date(2019, 12, 24),
+    start: new Date(2019, 11, 24),
     xpTime: '',
     logo: '/icons/stackoverflow.svg',
     level: 10,
+  },
+  {
+    name: 'Stripe',
+    category: 'platforms',
+    start: new Date(2021, 9, 4),
+    xpTime: '',
+    logo: 'icons/stripe.ico',
+    level: 3,
   },
   {
     name: 'tailwind',
@@ -633,6 +643,14 @@ export const skillsList: Skill[] = [
     xpTime: '',
     logo: '/icons/vim.svg',
     level: 4,
+  },
+  {
+    name: 'Vite',
+    category: 'tools',
+    start: new Date(2021, 2, 16),
+    xpTime: '',
+    logo: '/icons/vite.svg',
+    level: 7,
   },
   {
     name: 'vue',
