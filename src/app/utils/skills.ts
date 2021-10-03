@@ -16,6 +16,81 @@ export interface Skill {
   level: 2 | 3 | 4 | 5;
 }
 
+export type SkillNames =
+  | 'Javascript'
+  | 'Css'
+  | 'Html'
+  | 'Typescript'
+  | 'Python'
+  | 'Rust'
+  | 'Php'
+  | 'Angular'
+  | 'Apple'
+  | 'axios'
+  | 'aws'
+  | 'babel'
+  | 'Bash'
+  | 'Bootstrap'
+  | 'd3'
+  | 'date-fns'
+  | 'echarts'
+  | 'express'
+  | 'framer-motion'
+  | 'google-cloud'
+  | 'gridster'
+  | 'DBeaver'
+  | 'Docker'
+  | 'Figma'
+  | 'firebase'
+  | 'firestore'
+  | 'Git'
+  | 'GitHub'
+  | 'GitLab'
+  | 'Insomnia'
+  | 'Material Design'
+  | 'Mobirise'
+  | 'ngRx'
+  | 'MySQL'
+  | 'MongoDB'
+  | 'React'
+  | 'React Native'
+  | 'Realtime DB'
+  | 'RxJS'
+  | 'SQL'
+  | 'Visual Studio Code'
+  | 'Node'
+  | 'Mamp'
+  | 'Notion'
+  | 'jquery'
+  | 'material-ui'
+  | 'nebular'
+  | 'nodemailer'
+  | 'nodemon'
+  | 'npm'
+  | 'numpy'
+  | 'Oh my ZSH'
+  | 'pandas'
+  | 'pixlr'
+  | 'Postgres'
+  | 'puppeteer'
+  | 'pygame'
+  | 'redux'
+  | 'redis'
+  | 'Sass'
+  | 'Styled Components'
+  | 'SqLite'
+  | 'stackoverflow'
+  | 'tailwind'
+  | 'threejs'
+  | 'vercel'
+  | 'Vim'
+  | 'vue'
+  | 'Wamp'
+  | 'WebAssembly'
+  | 'webpack'
+  | 'yarn'
+  | 'next';
+
 export const skillsList: Skill[] = [
   {
     name: 'Javascript',
@@ -535,7 +610,7 @@ export const skillsList: Skill[] = [
     level: 4,
   },
   {
-    name: 'three',
+    name: 'threejs',
     category: 'libraries',
     start: new Date(2021, 3, 2),
     xpTime: '',

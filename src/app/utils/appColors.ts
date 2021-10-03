@@ -1,5 +1,21 @@
 import { IAppTheme } from '../hooks/ThemeContext';
 
+interface IColorScheme {
+  mainBg: string;
+  secondBg: string;
+  thirdBg: string;
+
+  heading: string;
+  text: string;
+  secondText: string;
+
+  base: string;
+  secondBase: string;
+  primary: string;
+  secondary: string;
+  tertiary: string;
+}
+
 export const lightColors = {
   mainBg: '#eeeefe',
   secondBg: '#41424d',
@@ -37,7 +53,7 @@ export const darkColors = {
   // primary: '#ff9900',
 };
 
-export const AppColors = (theme: IAppTheme): Record<string, string> => {
+export const AppColors = (theme: IAppTheme): IColorScheme => {
   const selectedTheme = theme === 'light' ? lightColors : darkColors;
 
   return selectedTheme;

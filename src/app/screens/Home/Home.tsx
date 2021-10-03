@@ -14,9 +14,10 @@ import { useWindowSize } from '../../hooks/useWindowSize';
 import { useThemeContext } from '../../hooks/ThemeContext';
 import { HomeStyles } from './Styles';
 
-import VideoPlayer from '../../components/VideoPlayer/VideoPlayer';
 import { FaLinkedin, FaGithub, FaStackOverflow } from 'react-icons/fa';
 import { FiMapPin, FiMail } from 'react-icons/fi';
+import VideoPlayer from '../../components/VideoPlayer';
+import { getProject, projects } from '../../utils/projects';
 
 export default function Home(): JSX.Element {
   const [responsive, setResponsive] = useState(false);
@@ -66,8 +67,8 @@ export default function Home(): JSX.Element {
 
       <section className="projects">
         <h2>Check some of my work</h2>
-        <VideoPlayer src={videoURLs.gordinho} forwardedRef={melRef} />
-        <VideoPlayer src={videoURLs.melMobile} forwardedRef={capoeiraRef} />
+        <VideoPlayer src={getProject('gordinho').videoUrl} />
+        <VideoPlayer src={getProject('lacos').videoUrl} />
 
         <Link to={'/projects'}>
           <button>Check more projects</button>
