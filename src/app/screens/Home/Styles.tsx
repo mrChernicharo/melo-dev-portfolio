@@ -35,6 +35,7 @@ export const HomeStyles = styled.div<HomeProps>`
 
         div.code {
           display: inline-block;
+          color: ${({ theme }) => AppColors(theme).tertiary};
         }
       }
 

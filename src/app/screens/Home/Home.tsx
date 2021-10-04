@@ -12,7 +12,7 @@ import { useThemeContext } from '../../hooks/ThemeContext';
 import { HomeStyles } from './Styles';
 
 import VideoPlayer from '../../components/VideoPlayer/VideoPlayer';
-import { getProject, projects } from '../../utils/projects';
+import { getProject } from '../../utils/projects';
 import Button from '../../components/Button/Button';
 import AboutLinks from '../../components/AboutLinks/AboutLinks';
 
