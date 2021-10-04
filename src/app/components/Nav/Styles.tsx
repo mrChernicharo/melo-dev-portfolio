@@ -37,7 +37,8 @@ export const NavStyles = styled.nav<{ theme: IAppTheme }>`
     animation: 0.4s ${slideIn};
     transition: top;
 
-    box-shadow: 0px -100px #41424d;
+    box-shadow: 0px -100px #41424d, 0px 2px 6px rgba(0, 0, 0, 0.4),
+      1px 2px 4px rgba(0, 0, 0, 0.3);
 
     &.fading {
       animation: 0.6s ${slideAway};

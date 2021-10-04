@@ -10,10 +10,14 @@ export const ProjectCardStyles = styled.div<{
   width: calc(100% - 12vmin);
   max-width: 750px;
 
+  position: relative;
   margin: 1rem auto;
+
   background-color: ${({ theme }) => AppColors(theme).thirdBg};
   border-radius: 0.25rem;
   padding: 1rem;
+
+  box-shadow: 2px 3px 6px rgba(00, 00, 40, 0.3), 3px 4px 4px rgba(00, 00, 20, 0.2);
 
   h1 {
     font-size: ${({ breakpoint }) => {
@@ -34,7 +38,7 @@ export const ProjectCardStyles = styled.div<{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid;
+    /* border: 1px solid; */
 
     li {
       margin-inline: 0.1rem;

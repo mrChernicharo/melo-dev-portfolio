@@ -33,6 +33,14 @@ const melTechs: SkillNames[] = ['Angular','RxJS','Sass','Typescript','firebase',
 const gordinhoTechs: SkillNames[] = ['Html', 'Css', 'Typescript', 'threejs', 'aws'];
 const d3Techs: SkillNames[] = ['Angular', 'RxJS', 'Sass', 'Typescript', 'd3', 'aws'];
 const capoeiraTechs: SkillNames[] = ['Javascript', 'React', 'threejs', 'vite'];
+const oldPorfolioTechs: SkillNames[] = ['Typescript', 'Css', 'React', 'next', 'vercel'];
+const happyPlantsTechs: SkillNames[] = [
+  'React Native',
+  'Styled Components',
+  'Typescript',
+  'Lottie',
+  'axios',
+];
 
 const getTechs = (techList: string[]) =>
   skillsList.filter(skill => techList.includes(skill.name));
@@ -110,6 +118,29 @@ export const projects: IProject[] = [
     },
     techs: getTechs(melTechs),
     videoUrl: videoURLs.mel,
+  },
+  {
+    id: 'oldPortfolio',
+    title: 'Portfolio',
+    description:
+      'My previous portfolio website developed with React, Next.js and deployed with Vercel. It features some of my early projects.',
+    videoUrl: videoURLs.oldPortfolio,
+    links: {
+      github: 'https://github.com/mrChernicharo/next-portfolio',
+      www: 'https://next-portfolio-iota-nine.vercel.app/',
+    },
+    techs: getTechs(oldPorfolioTechs),
+    imageUrls: [],
+  },
+  {
+    id: 'happyPlants',
+    title: 'Happy Plants',
+    description:
+      'Mobile app for managing plants. It stores info about every plant in your house and pushes notifications so you never forget to water your babies properly.',
+    videoUrl: videoURLs.happyPlants,
+    techs: getTechs(happyPlantsTechs),
+    links: { github: 'https://github.com/mrChernicharo/happy-plants', www: null },
+    imageUrls: [],
   },
 ];
 

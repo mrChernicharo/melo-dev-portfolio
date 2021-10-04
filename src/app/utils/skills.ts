@@ -47,6 +47,7 @@ export type SkillNames =
   | 'GitHub'
   | 'GitLab'
   | 'Insomnia'
+  | 'Lottie'
   | 'Material Design'
   | 'Mobirise'
   | 'ngRx'
@@ -376,6 +377,14 @@ export const skillsList: Skill[] = [
     xpTime: '',
     logo: '/icons/mongodb.svg',
     level: 6,
+  },
+  {
+    name: 'Lottie',
+    category: 'libraries',
+    start: new Date(2020, 2, 18),
+    xpTime: '',
+    logo: '/icons/lottie.png',
+    level: 7,
   },
 
   {

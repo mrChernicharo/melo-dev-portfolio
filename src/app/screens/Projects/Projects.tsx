@@ -8,6 +8,7 @@ import { techCategories, skillsList } from '../../utils/skills';
 import { videoURLs } from '../../utils/helpers';
 import { projects } from '../../utils/projects';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
+import CurrentPageIndicator from '../../components/CurrentPageIndicator/CurrentPageIndicator';
 
 export interface VideoCard {
   videoUrl: string;
@@ -25,11 +26,8 @@ export default function Projects(): JSX.Element {
 
   return (
     <Styles>
-      <h2>Projects</h2>
-
-      <a href="https://main.d2797vtjwvpw5j.amplifyapp.com" target="_blank">
-        Gordinho Defense
-      </a>
+      <CurrentPageIndicator text="projects" />
+      <h1>Some of the stuff I built</h1>
 
       <div className="illustration">
         <Lottie options={animOptions} width={400} height={400} />

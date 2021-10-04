@@ -40,6 +40,8 @@ export const Styles = styled.header<{ theme: IAppTheme }>`
   transform-origin: top;
   transition: all 0.5s ease-in-out;
 
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6), 0px 1px 6px rgba(0, 0, 0, 0.7);
+
   &.whitdrawn {
     animation: 0.8s ${bounce};
     height: 2.5rem;

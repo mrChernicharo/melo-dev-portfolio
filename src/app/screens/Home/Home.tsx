@@ -3,21 +3,18 @@ import { Link } from 'react-router-dom';
 
 import Lottie, { Options as LottieOptions } from 'react-lottie';
 import workingAnim from '../../assets/lottie/77409-working.json';
-import { videoURLs } from '../../utils/helpers';
 
-import hero from '/images/nasa-hero.jpg';
 import waves from '/images/svg-waves.svg';
 import topWaves from '/images/svg-waves-top.svg';
-import avatar from '/images/new-avatar.jpeg';
 
 import { useWindowSize } from '../../hooks/useWindowSize';
 import { useThemeContext } from '../../hooks/ThemeContext';
 import { HomeStyles } from './Styles';
 
-import { FaLinkedin, FaGithub, FaStackOverflow } from 'react-icons/fa';
-import { FiMapPin, FiMail } from 'react-icons/fi';
 import VideoPlayer from '../../components/VideoPlayer/VideoPlayer';
 import { getProject, projects } from '../../utils/projects';
+import Button from '../../components/Button/Button';
+import AboutLinks from '../../components/AboutLinks/AboutLinks';
 
 export default function Home(): JSX.Element {
   const [responsive, setResponsive] = useState(false);
@@ -43,114 +40,54 @@ export default function Home(): JSX.Element {
   return (
     <HomeStyles responsive={responsive} theme={theme} breakpoint={breakpoint}>
       <section className="top">
-        <div>
+        <div className="heading">
           <h1>Hi, I'm Felipe</h1>
           <h2>
             My life is to build things with <div className="code">{`{ code }`}</div>
           </h2>
 
-          <p>
-            I'm a Brazilian Software Engineer living in Washington DC. My job is to create
-            business solutions and compelling experiences, through creativity and coding
-            skills, always following the best practices and using the most modern tools.
-          </p>
+          <div className="description">
+            <p>
+              I'm a Brazilian Software Engineer living in Washington DC. My job is to
+              create business solutions and compelling experiences, through creativity and
+              coding skills, always following the best practices and using the most modern
+              tools.
+            </p>
+          </div>
         </div>
 
-        <Lottie
-          options={animOptions}
-          // style={{ border: '1px solid red' }}
-          isStopped={false}
-          isPaused={false}
-        />
+        <Lottie options={animOptions} isStopped={false} isPaused={false} />
       </section>
       <img src={waves} alt="waves" className="waves" />
 
       <section className="projects">
-        <h2>Check some of my work</h2>
+        <h1>Check some of my work</h1>
         <VideoPlayer src={getProject('gordinho').videoUrl} />
         <VideoPlayer src={getProject('lacos').videoUrl} />
 
         <Link to={'/projects'}>
-          <button>Check more projects</button>
+          <Button title="Check more projects" align="center" />
         </Link>
       </section>
       <img src={topWaves} alt="waves" className="waves" />
 
       <section className="about">
-        <h2>Get to know me better</h2>
+        <h1>Get to know me better</h1>
 
-        <img src={avatar} alt="" className="avatar" />
-        <div className="links-list">
-          <ul>
-            <li>
-              <span>
-                <strong>
-                  <FiMapPin size={20} /> Current Location:&nbsp;
-                </strong>
-                Washington DC
-              </span>
-            </li>
-            <li>
-              <a href="https://string7dev@gmail.com" target="_blank">
-                <span>
-                  <strong>
-                    <FiMail size={20} /> string7dev@gmail&nbsp;
-                  </strong>
-                </span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://linkedin.com/in/felipe-chernicharo-27ba911a8/"
-                target="_blank"
-              >
-                <strong>
-                  <FaLinkedin size={20} /> Felipe Chernicharo&nbsp;
-                  <span></span>
-                </strong>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/mrChernicharo" target="_blank">
-                <span>
-                  <strong>
-                    <FaGithub size={20} /> mrChernicharo&nbsp;
-                  </strong>
-                </span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://stackoverflow.com/users/13111779/felipe-chernicharo"
-                target="_blank"
-              >
-                <span>
-                  <strong>
-                    <FaStackOverflow size={20} /> Felipe&nbsp;
-                  </strong>
-                </span>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <AboutLinks />
 
         <Link to={'/about'}>
-          <button>More about me</button>
+          <Button title="More about me" align="center" />
         </Link>
       </section>
 
       <section className="contact">
-        <h2>And maybe leave me a message</h2>
+        <h1>And maybe leave me a message</h1>
 
         <Link to={'/about'}>
-          <button>Go to contact page</button>
+          <Button title="Go to contact page" align="center" />
         </Link>
       </section>
     </HomeStyles>
   );
-}
-{
-  /* <div className="hero-container">
-        <img src={hero} />
-      </div> */
 }
