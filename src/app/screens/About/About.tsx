@@ -5,9 +5,10 @@ import Lottie, { Options as LottieOptions } from 'react-lottie';
 
 import AboutLinks from '../../components/AboutLinks/AboutLinks';
 import avatar from '/images/new-avatar.jpeg';
-import computersAnimation from '../../assets/lottie/48786-tech-reviews.json';
+import computersAnimation from '../../assets/lottie/tech-reviews.json';
 
 import { techCategories, skillsList } from '../../utils/skills';
+import waves from '../../assets/svg/svg-waves.svg';
 import { useWindowSize } from '../../hooks/useWindowSize';
 import Button from '../../components/Button/Button';
 import { FiFileText } from 'react-icons/fi';
@@ -49,6 +50,8 @@ export default function About(): JSX.Element {
           </div>
         ))}
       </div>
+
+      <img src={waves} className="bottom-waves" />
     </Styles>
   );
 }

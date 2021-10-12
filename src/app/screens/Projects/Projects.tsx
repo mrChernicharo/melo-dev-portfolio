@@ -1,12 +1,13 @@
 import React, { useEffect, useRef } from 'react';
 import Lottie, { Options as LottieOptions } from 'react-lottie';
 import { Styles } from './Styles';
-import ideaAnimation from '../../assets/lottie/73810-business-idea-animation.json';
+import ideaAnimation from '../../assets/lottie/business-idea-animation.json';
 
 import { techCategories, skillsList } from '../../utils/skills';
 
 import { videoURLs } from '../../utils/helpers';
 import { projects } from '../../utils/projects';
+import waves from '../../assets/svg/svg-waves.svg';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import CurrentPageIndicator from '../../components/CurrentPageIndicator/CurrentPageIndicator';
 
@@ -36,6 +37,8 @@ export default function Projects(): JSX.Element {
       {projects.map((project, i) => (
         <ProjectCard project={project} delay={i * 1000} />
       ))}
+
+      <img src={waves} className="bottom-waves" />
     </Styles>
   );
 }

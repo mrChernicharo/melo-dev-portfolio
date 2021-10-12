@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import { useThemeContext } from './hooks/ThemeContext';
@@ -10,6 +10,11 @@ import Projects from './screens/Projects/Projects';
 
 export default function Router(): JSX.Element {
   const { theme } = useThemeContext();
+
+  useEffect(() => {
+    console.log('%c...Content loaded', 'color:green');
+  }, []);
+
   return (
     <BrowserRouter>
       <PageStyles theme={theme}>

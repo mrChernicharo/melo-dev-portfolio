@@ -1,11 +1,11 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { Suspense, useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import Lottie, { Options as LottieOptions } from 'react-lottie';
-import workingAnim from '../../assets/lottie/77409-working.json';
+import workingAnim from '../../assets/lottie/working.json';
 
-import waves from '/images/svg-waves.svg';
-import topWaves from '/images/svg-waves-top.svg';
+import waves from '../../assets/svg/svg-waves.svg';
+import topWaves from '../../assets/svg/svg-waves-top.svg';
 
 import { useWindowSize } from '../../hooks/useWindowSize';
 import { useThemeContext } from '../../hooks/ThemeContext';
@@ -48,22 +48,41 @@ export default function Home(): JSX.Element {
 
           <div className="description">
             <p>
-              I'm a Brazilian Software Engineer living in Washington DC. My job is to
-              create business solutions and compelling experiences, through creativity and
-              coding skills, always following the best practices and using the most modern
-              tools.
+              I'm a Software Engineer living in Washington DC. My job is to create
+              business solutions and compelling experiences, through creativity and coding
+              skills, always following the best practices and using the most modern
+              technologies.
             </p>
           </div>
         </div>
 
         <Lottie options={animOptions} isStopped={false} isPaused={false} />
       </section>
-      <img src={waves} alt="waves" className="waves" />
+
+      <section className="img-frame">
+        <img src={waves} alt="waves" className="waves" />
+      </section>
 
       <section className="projects">
-        <h1>Check some of my work</h1>
-        <VideoPlayer src={getProject('gordinho').videoUrl} />
-        <VideoPlayer src={getProject('lacos').videoUrl} />
+        <div className="heading">
+          <h1>Check some of my work</h1>
+        </div>
+
+        <div className="description">
+          <p>
+            <strong>Learning </strong>equals <strong>Discovery</strong> that equals{' '}
+            <strong>Fun!</strong> Practicing is the best way to master a skill, and
+            there's no way to get good at something if you don't get your hands dirty.
+            That's why I consider myself to be very lucky: I just love to practice! For
+            me, nothing is more exciting than to start a new project and to tinker around
+            with new technologies and tools.
+          </p>
+        </div>
+
+        <div className="video-gallery">
+          <VideoPlayer src={getProject('gordinho').videoUrl} />
+          <VideoPlayer src={getProject('lacos').videoUrl} />
+        </div>
 
         <Link to={'/projects'}>
           <Button title="Check more projects" align="center" />
@@ -88,6 +107,8 @@ export default function Home(): JSX.Element {
           <Button title="Go to contact page" align="center" />
         </Link>
       </section>
+
+      <img src={waves} className="bottom-waves" />
     </HomeStyles>
   );
 }
